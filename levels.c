@@ -332,7 +332,7 @@ int can_move_box(SDL_Rect pos, Directions direction, Level_state state){
 Move_type can_move_to(Directions direction, Level_state state){
     SDL_Rect pos_next = new_position(state.mario_pos,direction);
     if(pos_in_list(pos_next,state.wall_positions,state.nb_walls)
-       || pos_in_list(pos_next,state.goal_positions1,state.nb_goals)){
+       || pos_in_list(pos_next,state.goal_positions,state.nb_goals)){
         return MOVET_IMPOSSIBLE;
     }
     if(pos_in_list(pos_next,state.box_positions,state.nb_boxes)){

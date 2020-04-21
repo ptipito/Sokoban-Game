@@ -495,7 +495,8 @@ int last_level_nr(){
         if(cur_char==LEVEL_SEPARATOR_KEY)
             last_level++;
     }while(cur_char!=EOF);
-    return last_level;
+
+    return last_level+1;//Add one as the last level do not end with a level separator key but with EOF
 }
 
 //Handle the end of level when the level is complete

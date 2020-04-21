@@ -181,7 +181,7 @@ int handle_editor_keyboard_events(SDL_Event event, SDL_Surface* screen){
             TO_BLIT = EDITOR_MARIO;
             break;
         case SDLK_s:
-            save_level("levels/user_level.txt");
+            save_level(LEVELS_FILENAME);
             break;
         case SDLK_m:
             result=ACRES_BACK_TO_MENU;

@@ -11,6 +11,7 @@ void init_text_lib(){
         fprintf(stderr,"Error TTF init: %s\n",TTF_GetError());
         exit(EXIT_FAILURE);
     }
+    atexit(SDL_Quit);
 }
 
 TTF_Font* get_police(){

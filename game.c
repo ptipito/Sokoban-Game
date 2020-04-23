@@ -29,6 +29,7 @@ SDL_Surface* initialize(){
         fprintf(stderr,"SDL Init failed\n");
         exit(SDL_Init_Succes);
     }
+    atexit(SDL_Quit);
 
     init_text_lib();
 

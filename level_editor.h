@@ -1,4 +1,5 @@
 #ifndef DEF_LEVEL_EDITOR
+#define DEF_LEVEL_EDITOR
 #include <stdlib.h>
 #include <stdio.h>
 #include <SDL/SDL.h>
@@ -18,5 +19,5 @@ int handle_editor_events(SDL_Event event, SDL_Surface*);
 int handle_editor_keyboard_events(SDL_Event, SDL_Surface*);
 void save_level(char*);
 Action_result editor_run(SDL_Surface*);
-#endif // DEF_LEVEL_EDITOR
+#endif
 
